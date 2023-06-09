@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        position: absolute;  
+        display: none; 
+        right: 0; /*butonu saga yasladıgımız için acılacak menüyü de saga yasladık*/
+        background-color: rgb(216, 233, 227);
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    .drop-btn{
+        background-color: green;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer; 
+    }
+    .dropdown-content a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .Dropdown:hover .dropdown-content{
+        display: block;
+    }
+    .dropdown-content a:hover{
+        background-color: hotpink;
+    }
+    .apo{
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <h1>hoverable dropdown</h1>
+    <div class="Dropdown" style="float: right;"> 
+            <img src="img1.jpg" alt="" style="width: 50px; height: 50px;">
+        <div class="dropdown-content">
+            <img src="img1.jpg" alt="">
+            <div class="apo">
+                muhteşem deniz manzarası
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

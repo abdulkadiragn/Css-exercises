@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .gallery{
+        border: 1px solid rgb(221, 200, 200);
+    }
+    /*resimlerin bulundugu div'e tam sıgmaları için*/
+    div.gallery img{
+        width: 100%;
+        height: auto;
+    }
+    div.desc{
+        padding: 15px;
+        text-align: center;
+
+    }
+    div.gallery:hover{
+        border: 1px solid black;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .responsive{
+        padding: 0px 6px;
+        width: 25%;
+        float: left;
+
+    }
+    .clear-fix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+     @media only screen and (max-width: 700px) {.responsive{width: 50%;} }
+
+
+
+    @media only screen and (max-widht:500px){
+        
+    }
+</style>
+</style>
+<body>
+<div class="responsive">
+       <div class="gallery">
+        <a target="_blank" href="picsum1.jpg">
+            <img src="picsum1.jpg" alt="Yeni1" width="600" height="400">
+        </a>
+        <div class="desc">
+            Güzel bir resim
+        </div>
+    </div>
+</div>
+
+    <!-- ilk div ile digerleri aynı sadece picsum2,picsum3 diye gidiyor -->
+<div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="picsum2.jpg">
+            <img src="picsum2.jpg" alt="Yeni1" width="600" height="400">
+        </a>
+        <div class="desc">
+            Güzel bir resim
+        </div>
+    </div>
+</div>
+
+<div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="picsum3.jpg">
+            <img src="picsum3.jpg" alt="Yeni1" width="600" height="400">
+        </a>
+        <div class="desc">
+            Güzel bir resim
+        </div>
+    </div>
+</div>
+
+<div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="picsum4.jpg">
+            <img src="picsum4.jpg" alt="Yeni1" width="600" height="400">
+        </a>
+        <div class="desc">
+            Güzel bir resim
+        </div>
+    </div>
+</div>
+    <div class="clear-fix">
+
+    </div>
+
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iste autem fuga, obcaecati impedit quisquam vel facilis ducimus atque similique voluptates excepturi error sint aliquid? Et voluptas in adipisci ex totam harum placeat fuga est molestias quasi cumque repellendus, magni commodi facilis deleniti minus animi aperiam non consectetur distinctio id officiis error! Veniam facere laboriosam aperiam corporis velit consequatur modi nisi sequi rem saepe commodi odio sit fuga, tempore aliquid! Doloribus, delectus earum maxime esse vel minus deleniti porro nobis quas quibusdam cum. Voluptate ab praesentium cumque nostrum ut? Quos inventore ullam aliquid, cupiditate ducimus consectetur totam dolores ab beatae.</p>
+</div>
+</body>
+</html>

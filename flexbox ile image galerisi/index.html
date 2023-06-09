@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            text-align: center;
+            padding: 40px;
+            color: rgb(142, 124, 124);
+            background-color: gainsboro;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 5px;
+        }
+        .column{
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 5px;
+        }
+        .column img{
+            margin-top: 7px;
+            width: 100%;
+            vertical-align: middle;
+        }
+        @media screen and (max-width: 700px){
+            .column{
+                flex: 50%;
+                max-width: 100%;
+            }
+        }
+        @media screen and (max-width: 500px){
+            .column{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Flexbox ile resim galerisi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, odio!</p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="img/1.jpg" alt="">
+            <img src="img/agac.jpg" alt="">
+            <img src="img/bina.jpg" alt="">
+            <img src="img/bisiklet.jpg" alt="">
+            <img src="img/çöl.jpg" alt="">
+        </div>
+
+        <div class="column">
+            <img src="img/dag.jpg" alt="">
+            <img src="img/dalgıc.jpg" alt="">
+            <img src="img/doga.jpg" alt="">
+            <img src="img/gece.jpg" alt="">
+            <img src="img/havuz.jpg" alt="">
+        </div>
+
+        <div class="column">
+            <img src="img/kıyı.jpg" alt="">
+            <img src="img/şehir.jpg" alt="">
+            <img src="img/sis.jpg" alt="">
+            <img src="img/tas.jpg" alt="">
+            <img src="img/yagmur.jpg" alt="">
+        </div>
+
+        <div class="column">
+            <img src="img/bina.jpg" alt="">
+            <img src="img/dalgıc.jpg" alt="">
+            <img src="img/doga.jpg" alt="">
+            <img src="img/tas.jpg" alt="">
+            <img src="img/sehir.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
